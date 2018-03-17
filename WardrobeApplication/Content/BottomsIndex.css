@@ -1,0 +1,13 @@
+﻿body {
+    background-image: url('images/bottoms/RedHibiscusShorts.jpg');
+    background-position: center center;
+    /*background-repeat:no-repeat;*/
+    background-size:contain;
+}
+
+div.caption.bottoms-index {
+    background-image: url('images/bottoms/OrangeRedHibiscus.jpg');
+    background-position:center center;
+    background-size:contain;
+    color:#000000;
+}

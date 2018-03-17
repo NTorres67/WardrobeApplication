@@ -1,10 +1,48 @@
-﻿@model WardrobeApplication.Models.Bottom
+﻿<link href="~/Content/BottomsDetails.css" rel="stylesheet" />
+
+@model WardrobeApplication.Models.Bottom
 
 @{
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<div class="row">
+    <div class="col">
+        <p class="table-header">
+            Bottom Information
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="thumbnail bottoms-details">
+            <div class="caption bottoms-details">
+                <p class="description">
+                    @Html.DisplayNameFor(model => model.BottomName) : @Html.DisplayFor(model => model.BottomName)
+                </p>
+                <p>
+                    @Html.DisplayNameFor(model => model.BottomPhoto) : @Html.DisplayFor(model => model.BottomPhoto)
+                </p>
+                <p>
+                    @Html.DisplayNameFor(model => model.BottomColor) : @Html.DisplayFor(model => model.BottomColor)
+                </p>
+                <p>
+                    @Html.DisplayNameFor(model => model.BottomType) : @Html.DisplayFor(model => model.BottomType)
+                </p>
+                <p>
+                    @Html.DisplayNameFor(model => model.Season.SeasonName) : @Html.DisplayFor(model => model.Season.SeasonName)
+                </p>
+                <p>
+                    @Html.DisplayNameFor(model => model.Occasion.OccasionName) : @Html.DisplayFor(model => model.Occasion.OccasionName)
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 <div>
     <h4>Bottom</h4>
