@@ -14,98 +14,44 @@
     </div>
 </div>
 
+
+
 <div class="row">
-    @foreach (var item in Model)
-    {
-        <div class="col-md-4">
-            <div class="thumbnail details-index">
-                <div class="caption details-index">
+    <hr />
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <div class="thumbnail details-top">
 
-                    <p class="description">
-                        @Html.DisplayFor(modelItem => item.TopName)
-                    </p>
-                    @Html.DisplayNameFor(model => model.TopPhoto) : @Html.DisplayFor(model => model.TopPhoto)
+            @*<img class="thumbnail-photo" src="@Html.DisplayFor(modelItem => item.TopPhoto)" width="100" height="100">*@
 
-                        <p>
-                            @Html.DisplayNameFor(model => model.TopColor) : @Html.DisplayFor(model => model.TopColor)
-                        </p>
-                        <p>
-                            @Html.DisplayNameFor(model => model.TopType) :  @Html.DisplayNameFor(model => model.TopType)
-                        </p>
-                        <p>
-                            @Html.DisplayNameFor(model => model.Season.SeasonName) :  @Html.DisplayFor(model => model.Season.SeasonName)
-                        </p>
-                        <p>
-                            @Html.DisplayNameFor(model => model.Occasion.OccasionName) : @Html.DisplayFor(model => model.Occasion.OccasionName)
-                        </p>
+            <div class="caption details">
+                <p class="description">
+                    Description: @Html.DisplayFor(model => model.TopName)
+                </p>
+                <p>
+                    Image Location: @Html.DisplayFor(model => model.TopPhoto)
+                </p>
+                <p>
+                    Fabric Colors/Patterns: @Html.DisplayFor(model => model.TopColor)
+                </p>
+                <p>
+                    Type:  @Html.DisplayFor(model => model.TopType)
+                </p>
+                <p>
+                    Season Used:  @Html.DisplayFor(model => model.Season.SeasonName)
+                </p>
+                <p>
+                    Occasion Used: @Html.DisplayFor(model => model.Occasion.OccasionName)
+                </p>
 
-
-                        <p class="links">
-                            @Html.ActionLink("Edit", "Edit", new { id = Model.TopID }) |
-                            @Html.ActionLink("Back to List", "Index")
-                        </p>
-                </div>
+                <p class="links">
+                    @Html.ActionLink("Edit", "Edit", new { id = Model.TopID }) |
+                    @Html.ActionLink("Back to List", "Index")
+                </p>
             </div>
         </div>
-    }
+    </div>
+    <div class="col-md-2"></div>
 </div>
 
 
-<div>
-    <h4>Top</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.TopName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TopName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TopPhoto)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TopPhoto)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TopColor)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TopColor)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TopType)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TopType)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Occasion.OccasionName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Occasion.OccasionName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Season.SeasonName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Season.SeasonName)
-        </dd>
-
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.TopID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
