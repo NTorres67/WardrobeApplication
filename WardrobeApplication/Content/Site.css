@@ -22,3 +22,27 @@ select,
 textarea {
     max-width: 280px;
 }
+
+p.table-header {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:6vw;
+    font-weight:bold;
+    font-style:italic;
+    color:#ffffff;
+    text-align:center;
+}
+
+a {
+    font-size:1vw;
+    color:#ffffff;
+}
+
+div.thumbnail {
+    justify-content:center;
+    text-align:center;
+}
+
+p.description {
+    font-size:1.5vw;
+    color:#ffffff;
+}

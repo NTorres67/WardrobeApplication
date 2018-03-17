@@ -1,0 +1,16 @@
+﻿body {
+    background-image: url('images/tops/TapaLavaCloth.jpg');
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+
+div.thumbnail.tops-index {
+    background-image: linear-gradient(to right bottom, #800000, #914000, #917000, #7b9f00, #33cc33);
+    background-position: center center;
+    background-size: contain;
+    text-align: center;
+    color: #ffffff;
+}
+}
