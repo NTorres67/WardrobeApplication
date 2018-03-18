@@ -1,0 +1,31 @@
+﻿body {
+    background-image: url('images/shoes/PinkSlippahOutline.jpg');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:contain;
+    margin-top:2vw;
+}
+
+p.table-header {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 6vw;
+    font-weight: bold;
+    font-style: italic;
+    color: #000000;
+    text-align: center;
+}
+
+a {
+    font-size: 1vw;
+    color: #000000;
+}
+
+div.caption.shoes-index {
+    background-image: linear-gradient(to right bottom, #ff3399, #ff67af, #ff8cc3, #ffadd6, #ffcce6);
+    background-size:contain;
+}
+
+p.description {
+    font-size:1.5vw;
+    color:#000000;
+}

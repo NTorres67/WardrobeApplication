@@ -1,57 +1,49 @@
-﻿@model IEnumerable<WardrobeApplication.Models.Accessory>
+﻿<link href="~/Content/AccessIndex.css" rel="stylesheet" />
+
+@model IEnumerable<WardrobeApplication.Models.Accessory>
 
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<div class="row">
+    <div class="col">
+        <p class="table-header">
+            Accessories
+        </p>
+    </div>
+</div>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.AccessoryName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AccessoryPhoto)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AccessoryColor)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Occasion.OccasionName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Season.SeasonName)
-        </th>
-        <th></th>
-    </tr>
+<div class="row">
+    <div class="col">
+        <p>
+            @Html.ActionLink("Create New", "Create")
+        </p>
+    </div>
+</div>
+<hr/>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.AccessoryName)
-        </td>
-        <td>
-            <img src="@Html.DisplayFor(modelItem => item.AccessoryPhoto)" width="100" height="100">
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AccessoryColor)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Occasion.OccasionName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Season.SeasonName)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.AccessoryID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.AccessoryID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.AccessoryID })
-        </td>
-    </tr>
-}
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4">
+            <div class="thumbnail access-index">
+                <div class="caption access-index">
+                    <p class="thumbnail photo">
+                        <img src="@Html.DisplayFor(modelItem => item.AccessoryPhoto)" width="100" height="100">
+                    </p>
+                    <p class="description">
+                        @Html.DisplayFor(modelItem => item.AccessoryName)
+                    </p>
+                    <p>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.AccessoryID }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.AccessoryID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.AccessoryID })
+                    </p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
 
-</table>
+

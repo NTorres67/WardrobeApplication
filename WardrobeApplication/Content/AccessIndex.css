@@ -1,0 +1,9 @@
+﻿body {
+    background-image: url('images/accessories/AccessoriesBackground.jpg');
+    background-position:center center;
+    background-size:contain;
+}
+
+div.caption.access-index {
+    background:#000000;
+}

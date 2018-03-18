@@ -3,3 +3,16 @@
     background-position: center, center;
     background-size:contain;
 }
+
+p.description {
+    font-size:2vw;
+    font-weight:bold;
+    color:#ffffff;
+}
+
+div.caption.bottoms-details {
+    background-image: url('images/bottoms/RedHibiscusShorts.jpg');
+    font-size:1vw;
+    font-weight:bold;
+    color:#ffffff;
+}
