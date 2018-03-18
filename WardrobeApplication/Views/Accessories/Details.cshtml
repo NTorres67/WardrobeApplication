@@ -6,55 +6,48 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
-
-<div>
-    <h4>Accessory</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.AccessoryName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.AccessoryName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.AccessoryPhoto)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.AccessoryPhoto)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.AccessoryColor)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.AccessoryColor)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Occasion.OccasionName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Occasion.OccasionName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Season.SeasonName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Season.SeasonName)
-        </dd>
-
-    </dl>
+<div class="row">
+    <div class="col">
+        <p class="table-header">
+            Accessory Information
+        </p>
+    </div>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.AccessoryID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+<hr/>
+
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <div class="thumbnail access-details">
+            <div class="caption access-details">
+                <p class="description">
+                    Description: @Html.DisplayFor(model => model.AccessoryName)
+                </p>
+                <p>
+                    Image Location: @Html.DisplayFor(model => model.AccessoryPhoto)
+                </p>
+                <p>
+                    Colors/Patterns: @Html.DisplayFor(model => model.AccessoryColor)
+                </p>
+                <p>
+                    Season Used: @Html.DisplayFor(model => model.Season.SeasonName)
+                </p>
+                <p>
+                    Occasion Used: @Html.DisplayFor(model => model.Occasion.OccasionName)
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.AccessoryID }) |
+            @Html.ActionLink("Back to List", "Index")
+        </p>
+    </div>
+</div>
+
+

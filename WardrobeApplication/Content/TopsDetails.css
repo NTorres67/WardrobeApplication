@@ -4,15 +4,15 @@
     background-size: contain;
 }
 
-p.description{
-    font-size:2vw;
-    font-weight:bold;
-    color:#ffffff;
-}
-
 div.caption.details {
     background-image: url('images/tops/TapaLavaCloth.jpg');
-    font-size:1vw;
+    font-size:1.5vw;
     font-weight:bold;
+    color: #ffffff;
+}
+
+p.description {
+    font-size: 2.5vw;
+    font-weight: bold;
     color: #ffffff;
 }

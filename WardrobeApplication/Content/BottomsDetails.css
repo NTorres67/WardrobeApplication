@@ -4,15 +4,19 @@
     background-size:contain;
 }
 
-p.description {
-    font-size:2vw;
+div.caption.bottoms-details {
+    background-image: url('images/bottoms/RedHibiscusShorts.jpg');
+    background-position:center center;
+    background-size:contain;
+    justify-content:center;
+    align-items:center;
+    font-size:1.5vw;
     font-weight:bold;
     color:#ffffff;
 }
 
-div.caption.bottoms-details {
-    background-image: url('images/bottoms/RedHibiscusShorts.jpg');
-    font-size:1vw;
-    font-weight:bold;
-    color:#ffffff;
+p.description {
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: #ffffff;
 }
