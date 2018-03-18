@@ -1,2 +1,23 @@
 ﻿body {
+    background-image: linear-gradient(to right bottom, #9933ff, #b268ff, #c994ff, #debdff, #f2e6ff);
+    background-size:contain;
+}
+
+div.caption.outfit-details {
+    background-image: url('images/outfits/PurpleFlower.jpg');
+    background-position:center center;
+    background-size:contain;
+    text-align:center;
+    font-size:1.5vw;
+    font-weight:bold;
+    color:#000000;
+}
+p.description {
+    font-size:2.5vw;
+    font-weight:bold;
+    color:#000000;
+}
+
+a {
+    color:#000000;
 }

@@ -221,6 +221,7 @@
     <Content Include="Content\images\bottoms\BlueWhiteShorts.jpg" />
     <Content Include="Content\images\bottoms\OrangeRedHibiscus.jpg" />
     <Content Include="Content\images\bottoms\RedHibiscusShorts.jpg" />
+    <Content Include="Content\images\outfits\PurpleFlower.jpg" />
     <Content Include="Content\images\shoes\BrownBoots.jpg" />
     <Content Include="Content\images\shoes\PinkSlippahOutline.jpg" />
     <Content Include="Content\images\shoes\Slippahs.jpg" />
@@ -230,6 +231,8 @@
     <Content Include="Content\images\tops\BlueGreenOrchid.jpg" />
     <Content Include="Content\images\tops\BlueTankTop.jpg" />
     <Content Include="Content\images\tops\TapaLavaCloth.jpg" />
+    <Content Include="Content\OutfitsDetails.css" />
+    <Content Include="Content\OutfitsIndex.css" />
     <Content Include="Content\ShoesDetails.css" />
     <Content Include="Content\ShoesIndex.css" />
     <Content Include="Content\TopsDetails.css" />

@@ -1,2 +1,21 @@
 ﻿body {
+    background-image: url('images/outfits/PurpleFlower.jpg');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+
+p.table-header {
+    color:#000000;
+}
+
+div.thumbnail.outfit-index {
+    background-image: linear-gradient(to right bottom, #9933ff, #b268ff, #c994ff, #debdff, #f2e6ff);
+    font-size:1.5vw;
+    font-weight:bold;
+    color:#000000;
+}
+
+a {
+    color:#000000;
 }

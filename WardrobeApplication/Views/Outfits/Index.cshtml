@@ -1,15 +1,62 @@
-﻿@model IEnumerable<WardrobeApplication.Models.Outfit>
+﻿<link href="~/Content/OutfitsIndex.css" rel="stylesheet" />
+
+@model IEnumerable<WardrobeApplication.Models.Outfit>
 
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<div class="row">
+    <div class="col">
+        <p class="table-header">
+            Let's Make An Outfit!
+        </p>
+    </div>
+</div>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
+<div class="row">
+    <div class="col">
+        <p>
+            @Html.ActionLink("Create New", "Create")
+        </p>
+    </div>
+</div>
+<hr/>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4">
+            <div class="thumbnail outfit-index">
+                <div class="caption outfit-index">
+                    <p>
+                        @Html.DisplayFor(modelItem => item.Occasion.OccasionName)
+                    </p>
+                    <p>
+                        <img src="@Html.DisplayFor(model=>item.Top.TopPhoto)" width="100" height="100" />
+                    </p>
+                    <p>
+                        <img src="@Html.DisplayFor(model=>item.Bottom.BottomPhoto)" width="100" height="100" />
+                    </p>
+                    <p>
+                        <img src="@Html.DisplayFor(model=>item.Shoe.ShoePhoto)" width="100" height="100" />
+                    </p>
+                    <p>
+                        <img src="@Html.DisplayFor(model=>item.Accessory.AccessoryPhoto)" width="100" height="100" />
+                    </p>
+                    <p class="links">
+                        @Html.ActionLink("Edit", "Edit", new { id = item.OutfitID }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.OutfitID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.OutfitID })
+                    </p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+@*<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Accessory.AccessoryName)
@@ -60,4 +107,4 @@
     </tr>
 }
 
-</table>
+</table>*@

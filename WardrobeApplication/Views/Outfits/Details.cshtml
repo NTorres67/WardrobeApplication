@@ -1,12 +1,58 @@
-﻿@model WardrobeApplication.Models.Outfit
+﻿<link href="~/Content/OutfitsDetails.css" rel="stylesheet" />
+
+@model WardrobeApplication.Models.Outfit
 
 @{
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<div class="row">
+    <div class="col">
+        <p class="table-header">
+            Outfit Information
+        </p>
+    </div>
+</div>
+<hr/>
 
-<div>
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <div class="caption outfit-details">
+            <p>
+                Top: @Html.DisplayFor(model => model.Top.TopName)
+            </p>
+            <p>
+                Bottom: @Html.DisplayFor(model => model.Bottom.BottomName)
+            </p>
+            <p>
+                Footware: @Html.DisplayFor(model => model.Shoe.ShoeName)
+            </p>
+            <p>
+                Accessory: @Html.DisplayFor(model => model.Accessory.AccessoryName)
+            </p>
+            <p>
+                Season Used: @Html.DisplayFor(model => model.Season.SeasonName)
+            </p>
+            <p>
+                Occasion Used: @Html.DisplayFor(model => model.Occasion.OccasionName)
+            </p>
+        </div>
+        
+    </div>
+    <div class="col-md-2"></div>
+</div>
+
+<div class="row">
+    <div class="col">
+        @Html.ActionLink("Edit", "Edit", new { id = Model.OutfitID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+</div>
+
+
+
+@*<div>
     <h4>Outfit</h4>
     <hr />
     <dl class="dl-horizontal">
@@ -63,4 +109,4 @@
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.OutfitID }) |
     @Html.ActionLink("Back to List", "Index")
-</p>
+</p>*@
