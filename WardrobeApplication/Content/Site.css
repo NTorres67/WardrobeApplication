@@ -23,6 +23,23 @@ textarea {
     max-width: 280px;
 }
 
+/*navbar background*/
+div.navbar.navbar-inverse.navbar-fixed-top {
+    background-image: url('images/HomeBackground.jpg');
+}
+
+.navbar-inverse .navbar-brand {
+    font-size:2vw;
+    font-weight:bold;
+    color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    font-size:1.5vw;
+    font-weight:bold;
+    color: #ffffff;
+}
+
 p.table-header {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size:6vw;
