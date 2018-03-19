@@ -208,6 +208,7 @@
     <Content Include="Content\BottomsDetails.css" />
     <Content Include="Content\BottomsIndex.css" />
     <Content Include="Content\HomeIndex.css" />
+    <Content Include="Content\images\154.JPG" />
     <Content Include="Content\images\accessories\AccessoriesBackground.jpg" />
     <Content Include="Content\images\accessories\GoldRing.jpg" />
     <Content Include="Content\images\accessories\RingBackground.jpg" />
@@ -222,9 +223,12 @@
     <Content Include="Content\images\bottoms\BlueWhiteShorts.jpg" />
     <Content Include="Content\images\bottoms\OrangeRedHibiscus.jpg" />
     <Content Include="Content\images\bottoms\RedHibiscusShorts.jpg" />
+    <Content Include="Content\images\Ford.jpg" />
     <Content Include="Content\images\HawnTribal.jpg" />
     <Content Include="Content\images\HomeBackground.jpg" />
     <Content Include="Content\images\Honuapu.jpg" />
+    <Content Include="Content\images\IMG_0866.JPG" />
+    <Content Include="Content\images\Ninui Island 6.JPG" />
     <Content Include="Content\images\outfits\PurpleFlower.jpg" />
     <Content Include="Content\images\shoes\BrownBoots.jpg" />
     <Content Include="Content\images\shoes\PinkSlippahOutline.jpg" />
